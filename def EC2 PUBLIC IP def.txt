@@ -74,7 +74,7 @@ pipeline {
         stage('Update Backend Configuration') {
             steps {
                 script {
-                    dir('/home/asus/deploy_note_app/enis-app-tp/backend/backend/') {
+                    dir('enis-app-tp/backend/backend') {
                         // Verify the existence of settings.py
                         sh '''
                             if [ -f "settings.py" ]; then
